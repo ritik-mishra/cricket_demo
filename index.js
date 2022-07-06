@@ -1,5 +1,5 @@
 const express = require('express')
-const PORT=3000 
+// const PORT=3000 
 const app = express()
 const schema = require('./Schemas/index')
 const mongoose = require('mongoose')
@@ -21,6 +21,6 @@ app.use(
 
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log("server running on 3000")
 })
